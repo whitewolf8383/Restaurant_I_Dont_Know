@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keith J Francis">
+    <meta name="description" content="Final Project for University of Denver, ICT4510 Advanced Web Design and Management class" >
+    <meta name="keywords" content="Restaurant Web Application, University of Denver, ICT4510, Bootstrap, JavaScript, HTML, CSS, Leaflet" >
+    <title>Restaurant I Don't Know</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap info -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/site-styles.css">
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+
+    <!-- JS Files -->
+    <script defer src="assets/js/app.js"></script>
+    <script defer src="assets/js/admin.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/css/favicons/IDK-favi-16.png" type="image" sizes="16x16">
+  </head>
+
+  <body>
+    <div class="sticky-nav">
+      <div class="container">
+        <section class="icon-container">
+          <div class="icon-div">
+            <img class="icon-img" src="assets/css/images/icons/phone-icon.png" alt="Small icon representing a cell phone.">
+            <p class="icon-text">+1 (303) 245 6789</p>
+          </div>
+          <div class="icon-div">
+            <img class="icon-img" src="assets/css/images/icons/clock-icon.png" alt="Small icon representing a clock.">
+            <p class="icon-text">Mon-Sat: 11:00 AM - 22:30 PM Sun: 10:30 AM - 20:00 PM</p>
+          </div>
+        </section>
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-light text-decoration-none">
+            <img class="me-2 nav-img" src="assets/css/favicons/IDK-favi-64.png"></img>
+          </a>
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link nav-btn link-btn">Home</a></li>
+            <li><a href="menu.html" class="nav-link nav-btn link-btn">Menu</a></li>
+            <li><a href="about.html" class="nav-link nav-btn link-btn">About</a></li>
+            <li><a href="#" class="nav-link nav-btn link-btn admin-link">Admin</a></li>
+          </ul>
+          <div class="col-md-3 text-end">
+            <button id="login-btn" class="nav-btn link-btn">Login</button>
+            <button id="log-out-btn" class="nav-btn link-btn">Log Out</button>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <main>
+      <div id="admin-div">
+        <button id="get-btn">Get Menu</button>
+        <button id="create-btn">Create Item</button>
+      </div>
+
+      <div id="get-div">
+        <h3>Nice Looking Menu</h3>
+        <div class="menu-div">
+        </div>
+      </div>
+
+      <div id="post-create-div">
+        <form>
+          <h3>Lets Create Something Yummy!</h3>
+          <label for="item">Item Name</label>
+          <input type="text" minlength="3" id="item" required>
+          <label for="description">What is it?</label>
+          <input type="text" minlength="3" id="description" required>
+          <label for="price">How much?</label>
+          <input type="number" id="price" required>
+        </form>
+        <button id="create-item">Create Item</button>
+      </div>
+
+    </main>
+    <footer>
+      <small>University of Denver ICT 4510 Portfolio Assignment</small>
+      <small>&copy Keith J. Francis | 2021</small>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
+</html>

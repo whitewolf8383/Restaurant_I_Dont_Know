@@ -1,0 +1,87 @@
+main{
+  text-align: center;
+}
+h2, h3 {
+  font-family: "Satisfy";
+}
+h2 {
+  font-size: 62px;
+}
+h3 {
+  font-size: 40px;
+}
+p {
+  font-family: "Comic Neue";
+}
+main p {
+  margin: auto;
+  width: 750px;
+  text-align: left;
+  line-height: 170%;
+  letter-spacing: 3px;
+}
+.info-block {
+  height: 900px;
+}
+.address-block p {
+  text-align: center;
+}
+#map {
+  height: 500px;
+  margin: 30px auto;
+  width: 1000px;
+  z-index: 0;
+}
+@media screen and (max-width: 1400px) {
+  main {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    width: 992px;
+  }
+  #map {
+    height: 450px;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    width: 768px;
+  }
+  main p {
+    width: 650px;
+  }
+  #map {
+    height: 400px;
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 575px;
+  }
+  main p {
+    width: 550px;
+  }
+  #map {
+    height: 400px;
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    width: 530px;
+  }
+  main p {
+    width: 450px;
+  }
+  #map {
+    height: 200px;
+    width: 90vw;
+  }
+}

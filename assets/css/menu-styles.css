@@ -1,0 +1,80 @@
+main {
+  width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+.menu-div {
+  background-color: white;
+  border: solid 1px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin: auto auto 250px auto;
+  padding: 30px;
+  width: 1200px;
+}
+h3 {
+  font-family: "Satisfy";
+  font-size: 50px;
+  margin: 20px auto;
+}
+h5, label, p {
+  font-family: "Comic Neue";
+  padding: 5px;
+}
+.inline {
+  display: inline;
+}
+.menu-item-description h5 {
+  margin-right: 100px;
+}
+.menu-item-description {
+  text-align: left;
+}
+.menu-item {
+  background-color: white;
+  border: solid 1px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: auto;
+  width: 800px;
+}
+
+
+@media screen and (max-width: 1400px) {
+  main {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    width: 768px;
+  }
+  main p {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 575px;
+  }
+  main p {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    width: 530px;
+  }
+  main p {
+    width: 450px;
+  }
+}
